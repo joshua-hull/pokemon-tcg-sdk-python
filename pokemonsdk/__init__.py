@@ -5,4 +5,5 @@ from pokemonsdk.restclient import PokemonException
 from pokemonsdk.set import Set
 from pokemonsdk.subtype import Subtype
 from pokemonsdk.supertype import Supertype
-from pokemonsdk.type import Type 
+from pokemonsdk.type import Type
+from pokemonsdk.card import Card 
