@@ -25,11 +25,11 @@ class Card(object):
         self.weaknesses = response_dict.get('weaknesses')
         self.resistances = response_dict.get('resistances')
 
-    def find(self, id):
+    def find(id):
         return QueryBuilder(Card).find(id)
 
-    def where(self, **kwargs):
+    def where(**kwargs):
         return QueryBuilder(Card).where(**kwargs)
 
-    def all(self):
+    def all():
         return QueryBuilder(Card).all()

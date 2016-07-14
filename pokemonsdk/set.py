@@ -14,8 +14,8 @@ class Set(object):
         self.standard_legal = response_dict.get('standardLegal')
         self.release_date = response_dict.get('releaseDate')
 
-    def where(self, **kwargs):
+    def where(**kwargs):
         return QueryBuilder(Set).where(**kwargs)
 
-    def all(self):
+    def all():
         return QueryBuilder(Set).all()

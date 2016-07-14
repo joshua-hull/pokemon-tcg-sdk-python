@@ -4,5 +4,5 @@ from pokemonsdk.querybuilder import QueryBuilder
 class Supertype(object):
     RESOURCE = 'supertypes'
 
-    def all(self):
+    def all():
         return QueryBuilder(Supertype).array()

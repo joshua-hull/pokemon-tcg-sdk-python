@@ -5,7 +5,7 @@ from urllib.parse import urlencode
 
 
 class RestClient(object):
-    def get(self, url, params={}):
+    def get(url, params={}):
         request_url = url
         if len(params) > 0:
             request_url = "{}?{}".format(url, urlencode(params))
