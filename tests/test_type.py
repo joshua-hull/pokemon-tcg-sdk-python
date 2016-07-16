@@ -24,3 +24,6 @@ class TestType(unittest.TestCase):
                               "Metal",
                               "Psychic",
                               "Water"], types)
+
+if __name__ == '__main__':
+    unittest.main()

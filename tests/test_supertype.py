@@ -12,6 +12,6 @@ class TestType(unittest.TestCase):
         """Test Supertype.all() returns all supertypes."""
         with vcr.use_cassette('fixtures/supertypes.yaml'):
             supertypes = Supertype.all()
-            self.assertEqual(["Pokemon",
+            self.assertEqual(["Pokémon",
                               "Energy",
                               "Trainer"], supertypes)

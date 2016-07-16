@@ -10,7 +10,7 @@ class TestType(unittest.TestCase):
 
     def test_find_returns_set(self):
         """Test Set.find() returns a set."""
-        with vcr.use_cassette('fixture/xy1.yaml'):
+        with vcr.use_cassette('fixtures/xy1.yaml'):
             set = Set.find('xy1')
 
             self.assertEqual('xy1', set.code)
@@ -22,7 +22,7 @@ class TestType(unittest.TestCase):
 
     def test_where_filters_on_name(self):
         """Test Set.where() returns a set."""
-        with vcr.use_cassette('fixture/filtered_sets.yaml'):
+        with vcr.use_cassette('fixtures/filtered_sets.yaml'):
             sets = Set.where(name='jungle').all()
 
             self.assertEqual(1, len(sets))
@@ -30,7 +30,7 @@ class TestType(unittest.TestCase):
 
     def test_all_returns_all_sets(self):
         """Test Set.all() returns all sets."""
-        with vcr.use_cassette('fixture/all_sets.yaml'):
+        with vcr.use_cassette('fixtures/all_sets.yaml'):
             sets = Set.all()
 
             self.assertGreater(len(sets), 25)

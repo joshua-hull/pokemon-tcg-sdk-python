@@ -12,7 +12,7 @@ class TestType(unittest.TestCase):
         """Test Subtype.all() returns all subtypes."""
         with vcr.use_cassette('fixtures/subtypes.yaml'):
             subtypes = Subtype.all()
-            self.assertTrue(len(subtypes) > 16)
+            self.assertTrue(len(subtypes) == 17)
             self.assertTrue('Basic' in subtypes)
-            self.assertTrue('Level 1' in subtypes)
-            self.assertTrue('Level 2' in subtypes)
+            self.assertTrue('Stage 1' in subtypes)
+            self.assertTrue('Stage 2' in subtypes)
