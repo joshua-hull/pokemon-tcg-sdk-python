@@ -4,7 +4,7 @@ from pokemonsdk.config import __endpoint__
 
 
 class Set(object):
-    
+
     """Represents the Sets of cards.
 
     See https://docs.pokemontcg.io/#get-all-sets
@@ -30,6 +30,15 @@ class Set(object):
         self.total_cards = response_dict.get('totalCards')
         self.standard_legal = response_dict.get('standardLegal')
         self.release_date = response_dict.get('releaseDate')
+
+
+    def find(id):
+        """Get a specific set.
+
+        Returns:
+            object: Set instance
+        """
+        return QueryBuilder(Set).find(id)
 
     def where(**kwargs):
         """Get a filtered list of types.
