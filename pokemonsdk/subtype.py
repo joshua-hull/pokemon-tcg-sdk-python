@@ -1,4 +1,5 @@
-from pokemonsdk.querybuilder import QueryBuilder
+"""Represents the Subtypes of cards."""
+from pokemonsdk import QueryBuilder
 
 
 class Subtype(object):

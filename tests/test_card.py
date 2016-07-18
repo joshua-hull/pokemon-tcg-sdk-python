@@ -39,18 +39,6 @@ class TestCard(unittest.TestCase):
             self.assertEqual('Telekinesis', card.attacks[0]['name'])
             self.assertEqual('', card.attacks[0]['damage'])
             self.assertEqual(3, card.attacks[0]['convertedEnergyCost'])
-            # self.assertEqual([
-            #     {'cost': ['Colorless',
-            #               'Colorless',
-            #               'Colorless'],
-            #      'name':'Telekinesis',
-            #      'text':"This attack does 50 damage to 1 of "
-            #             "your opponents's Pokémon. This "
-            #             "attack's damage isn't affected "
-            #             "by Weakness or Resistance.",
-            #      'damage':'',
-            #      'convertedEnergyCost':3}
-            # ], card.attacks)
             self.assertEqual([{'type': 'Metal', 'value': '\xd72'}],
                              card.weaknesses)
             self.assertEqual([{'type': 'Darkness', 'value': '-20'}],

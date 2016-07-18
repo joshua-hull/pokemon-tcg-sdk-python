@@ -1,5 +1,6 @@
+"""Represents a card."""
 import json
-from pokemonsdk.querybuilder import QueryBuilder
+from pokemonsdk import QueryBuilder
 
 
 class Card(object):

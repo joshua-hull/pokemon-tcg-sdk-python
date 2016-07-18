@@ -1,6 +1,7 @@
+"""Represents the Sets of cards."""
 import json
-from pokemonsdk.querybuilder import QueryBuilder
-from pokemonsdk.config import __endpoint__
+from pokemonsdk import QueryBuilder
+from pokemonsdk import __endpoint__
 
 
 class Set(object):

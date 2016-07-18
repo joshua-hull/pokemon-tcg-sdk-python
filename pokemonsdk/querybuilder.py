@@ -1,5 +1,4 @@
 """Module to query different resources of the API."""
-
 import json
 from pokemonsdk.restclient import RestClient
 from pokemonsdk.config import __endpoint__

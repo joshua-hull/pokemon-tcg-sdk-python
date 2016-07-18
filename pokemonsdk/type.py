@@ -1,4 +1,5 @@
-from pokemonsdk.querybuilder import QueryBuilder
+"""Represents the types of Pokemon: Water, Grass, Fire, etc."""
+from pokemonsdk import QueryBuilder
 
 
 class Type(object):

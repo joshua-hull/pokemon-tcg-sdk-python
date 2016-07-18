@@ -1,4 +1,5 @@
-from pokemonsdk.querybuilder import QueryBuilder
+"""Represents the Supertypes of cards: Pokemon, Energy, Trainer."""
+from pokemonsdk import QueryBuilder
 
 
 class Supertype(object):

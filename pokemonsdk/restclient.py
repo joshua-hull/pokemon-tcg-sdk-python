@@ -1,3 +1,4 @@
+"""Handles make HTTP REST calls."""
 import json
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
